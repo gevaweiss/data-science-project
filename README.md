@@ -20,9 +20,9 @@ This table describes all the features available in the final enriched dataset, d
 | **`count_verse`** | Structure | Integer | The number of verse sections in the song. |
 | **`count_intro`** | Structure | Integer | The number of intro sections identified. |
 | **`count_bridge`** | Structure | Integer | The number of bridge sections identified. |
-| **`unique_special_word`** | Linguistics (NLP) | Integer | The count of unique words in the song, excluding common stop-words. |
-| **`special_word_without_chorus`**| Linguistics (NLP) | Integer | Total word count where repeated chorus sections are counted only **once** to avoid bias. |
-| **`unique_ratio_no_repeated_chorus`**| Linguistics (NLP) | Float (Ratio)| **Core Lexical Diversity Metric:** The ratio of unique words to the non-repeated word count (closer to 1 = highly diverse, closer to 0 = highly repetitive). |
+| **`unique_special_word`** | Linguistics (NLP) | Integer | The count of words in the song, excluding common stop-words and repetative words. |
+| **`special_word_without_chorus`**| Linguistics (NLP) | Integer | Total special word count where repeated chorus sections are counted only **once** to avoid bias. |
+| **`unique_ratio_no_repeated_chorus`**| Linguistics (NLP) | Float (Ratio)| **Core Lexical Diversity Metric:** The ratio of unique words to total words no stop-words and without repeated chours (closer to 1 = highly diverse, closer to 0 = highly repetitive). |
 | **`special_words_ratio`** | Linguistics (NLP) | Float (Ratio)| Standard lexical diversity ratio (before chorus normalization). |
 | **`profanity_count`** | Linguistics (NLP) | Integer | Total occurrences of profanity or explicit language. |
 | **`profanity_ratio`** | Linguistics (NLP) | Float (Ratio)| The percentage of explicit words relative to the total word count. |
