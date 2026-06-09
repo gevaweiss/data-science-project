@@ -118,3 +118,4 @@ This table describes all the features available in the final enriched dataset, d
     </tr>
   </tbody>
 </table>
+<img width="989" height="590" alt="טבלת סיכום כמות שירים" src="https://github.com/user-attachments/assets/41fac251-9f8a-45ad-a78e-b2d92de93a71" />
