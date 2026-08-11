@@ -33,7 +33,9 @@
   - [2. Lexical Dynamics](#2-lexical-dynamics-the-rise-and-fall-of-words)
   - [3. Cultural Shifts & Profanity](#3-cultural-shifts--profanity)
   - [4. AI & LLM Detection](#4-ai--large-language-model-llm-detection)
-- [Full Data Dictionary](#variables)
+- [Full Data Dictionary](#full-data-dictionary)
+- [Repository Structure](#repository-structure)
+- [Quickstart & Reproducibility](#quickstart--reproducibility)
 </details>
 
 ---
@@ -64,7 +66,7 @@ Using **Exploratory Data Analysis (EDA)** and **Natural Language Processing (NLP
 * `artist_name` – Performing artist or group
 * `release_year` / `decade` – Release year and binned decade
 * `genre` – Musical genre classification (e.g., Rock, Blues, Country, Hip-Hop)
-* `unique_ratio_no_repeted_chorus` – Core Lexical Diversity Metric: The ratio of unique words to total words no stop-words and without repeated chours (closer to 1 = highly diverse, closer to 0 = highly repetitive).
+* `nique_ratio_no_repeated_chorus` – Core Lexical Diversity Metric: The ratio of unique words to total words no stop-words and without repeated chours (closer to 1 = highly diverse, closer to 0 = highly repetitive).
 * `total_word_count` – Total word count per song
 * `profanity_ratio` – Frequency of profane terms per track
 
@@ -161,10 +163,10 @@ This table describes all 25 features available in the final enriched dataset, di
 
 </details>
 
-# Records:
+## Records:
 <img width="989" height="590" alt="טבלת סיכום כמות שירים" src="https://github.com/user-attachments/assets/41fac251-9f8a-45ad-a78e-b2d92de93a71" />
 
-# The Fresh effect:
+## The Fresh effect:
 <img width="1454" height="728" alt="ezgif com-resize" src="https://github.com/user-attachments/assets/67c2b81e-28da-4206-a066-5f59201da19c" />
 
 ---
