@@ -174,4 +174,5 @@ This table describes all 25 features available in the final enriched dataset, di
 ├── Figures/                # High-resolution plots, charts, and Jupyter Notebooks for visualizations
 ├── Project/                # Final PDF report and presentation materials
 ├── code/                   # Python scripts for data cleaning, preprocessing, and NLP calculations
+├── requirements.txt        # Python package dependencies
 └── README.md               # Project documentation
