@@ -9,7 +9,7 @@ Using Exploratory Data Analysis (EDA) and Natural Language Processing (NLP) tech
 
 ## Team Members
 * **Geva Weiss**
-* **Amit Schroub**
+* **Amit Schraub**
 
 ---
 
