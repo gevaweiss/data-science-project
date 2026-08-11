@@ -58,7 +58,7 @@ Using **Exploratory Data Analysis (EDA)** and **Natural Language Processing (NLP
 * **Source:** [genius](https://genius.com/)
 * **Data:** [Data Set](Data/final_genius_enriched_songs_by_dacades_patched.csv)
 * **Records:** [785](#records)
-* **Variables:** [25](#variables)
+* **Variables:** [25](#full-data-dictionary)
 
 ### Primary Variables
 * `song_title` – Title of the track
@@ -120,8 +120,14 @@ Using **Exploratory Data Analysis (EDA)** and **Natural Language Processing (NLP
 ---
 
 ### 4. AI & Large Language Model (LLM) Detection
-- **No AI Influence Detected:** Found no evidence of LLM usage or adoption among popular songwriters in recent years.
-- **Domain Mismatch:** Benchmark LLM wordlists (typically derived from scientific literature) present a domain mismatch when applied to poetic and creative song lyrics.
+- **No AI Influence Detected:** We found no empirical evidence of LLM usage or stylistic adoption among songwriters in recent years.
+- **Domain Mismatch:** Benchmark LLM wordlists (typically compiled from scientific literature) show a clear domain mismatch when applied to poetic and creative lyrics.
+- **The "Fresh" Effect (Outlier Case Study):** 
+  Our initial analysis flagged a potential spike in "AI-like" vocabulary in modern songs. However, deeper investigation revealed a severe **sample bias driven by a single word: *"fresh"***. 
+  
+  Because *"fresh"* appears heavily in benchmark LLM wordlists as well as in specific song titles/choruses, it artificially inflated the LLM similarity score. Once isolated and normalized, the apparent trend completely vanished—confirming that the observed spike was merely an outlier artefact rather than genuine AI influence.
+
+<img width="1454" height="728" alt="ezgif com-resize" src="https://github.com/user-attachments/assets/67c2b81e-28da-4206-a066-5f59201da19c" />
 
 ---
 
@@ -166,8 +172,6 @@ This table describes all 25 features available in the final enriched dataset, di
 ## Records:
 <img width="989" height="590" alt="טבלת סיכום כמות שירים" src="https://github.com/user-attachments/assets/41fac251-9f8a-45ad-a78e-b2d92de93a71" />
 
-## The Fresh effect:
-<img width="1454" height="728" alt="ezgif com-resize" src="https://github.com/user-attachments/assets/67c2b81e-28da-4206-a066-5f59201da19c" />
 
 ---
 
