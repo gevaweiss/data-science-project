@@ -16,19 +16,17 @@ Using Exploratory Data Analysis (EDA) and Natural Language Processing (NLP) tech
 ## Dataset Description
 * **Source:** [genius](https://genius.com/)
 * **Data:** [Data Set](Data/final_genius_enriched_songs_by_dacades_patched.csv)
-* **Records:** [750](#records)
-* **Variables:** [20](#variables)
+* **Records:** [785](#records)
+* **Variables:** [25](#variables)
 
 ### Primary Variables
 * `song_title` – Title of the track
 * `artist_name` – Performing artist or group
 * `release_year` / `decade` – Release year and binned decade
 * `genre` – Musical genre classification (e.g., Rock, Blues, Country, Hip-Hop)
-* `lyrics_text` – Full cleaned text of song lyrics
-* `lexical_richness` – Quantitative metric measuring vocabulary diversity (e.g., TTR / Readability)
-* `word_count` – Total word count per song
-* `[profanity_count]` – Frequency of profane terms per track
-* `[tfidf_score]` – Decade-level term frequency-inverse document frequency metric
+* `unique_ratio_no_repeted_chorus` – Quantitative metric measuring vocabulary diversity (e.g., TTR / Readability)
+* `total_word_count` – Total word count per song
+* `profanity_ratio` – Frequency of profane terms per track
 
 ### Data Cleaning & Preprocessing
 * Handled missing values in lyric metadata.
@@ -60,8 +58,6 @@ Using Exploratory Data Analysis (EDA) and Natural Language Processing (NLP) tech
 
 
 
-# data-science-project
-## Dataset Data Dictionary
 
 This table describes all the features available in the final enriched dataset, divided into logical categories: Metadata, Popularity Targets, Song Structure, and Linguistics/NLP.
 
