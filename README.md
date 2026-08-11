@@ -59,6 +59,7 @@ Using Exploratory Data Analysis (EDA) and Natural Language Processing (NLP) tech
 
 
 # Variables:
+
 This table describes all the features available in the final enriched dataset, divided into logical categories: Metadata, Popularity Targets, Song Structure, and Linguistics/NLP.
 
 | Feature Name | Category | Data Type | Description |
