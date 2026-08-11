@@ -189,5 +189,5 @@ Follow these steps to set up the environment and run the code on your local mach
 ### 1. Clone the Repository
 Open your terminal / command prompt and run:
 ```bash
-git clone [https://github.com/gevaweiss/data-science-project.git](https://github.com/gevaweiss/data-science-project.git)
+git clone https://github.com/gevaweiss/data-science-project.git
 cd data-science-project
