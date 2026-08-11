@@ -178,3 +178,15 @@ This table describes all 25 features available in the final enriched dataset, di
 ├── code/                   # Python scripts for data cleaning, preprocessing, and NLP calculations
 ├── requirements.txt        # Python package dependencies
 └── README.md               # Project documentation
+
+---
+
+## 🚀 Quickstart & Reproducibility
+
+Follow these steps to set up the environment and run the code on your local machine:
+
+### 1. Clone the Repository
+Open your terminal / command prompt and run:
+```bash
+git clone [https://github.com/gevaweiss/data-science-project.git](https://github.com/gevaweiss/data-science-project.git)
+cd data-science-project
