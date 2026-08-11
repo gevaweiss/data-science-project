@@ -56,7 +56,7 @@ Using **Exploratory Data Analysis (EDA)** and **Natural Language Processing (NLP
 ---
 
 ## Dataset Description
-* **Source:** [genius](https://genius.com/)
+* **Source:** [Genius.com](https://genius.com/)
 * **Data:** [Data Set](Data/final_genius_enriched_songs_by_dacades_patched.csv)
 * **Records:** [785](#records)
 * **Variables:** [25](#full-data-dictionary)
