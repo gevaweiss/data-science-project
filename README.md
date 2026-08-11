@@ -1,16 +1,52 @@
-# Lyric Evolution Across Decades: Are Songs Getting Simpler?
+# 🎵 Lyric Evolution Across Decades: Are Songs Getting Simpler?
 
-## Overview
-This repository contains the data science final project for course **71253** at the Hebrew University. The project investigates the "Big Question": **Have music lyrics become simpler or lower in quality over the decades?**
-
-Using Exploratory Data Analysis (EDA) and Natural Language Processing (NLP) techniques—including lexical richness metrics, profanity evolution tracking, and decade-level TF-IDF analysis—we analyze trends in lyric complexity, vocabulary trajectories, and the potential presence of AI/LLM influences in modern music.
+<!-- Badges Section -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.12%2B-blue?style=for-the-badge&logo=python" alt="Python Version" />
+  <img src="https://img.shields.io/badge/Domain-NLP%20%26%20EDA-orange?style=for-the-badge" alt="Domain" />
+  <img src="https://img.shields.io/badge/Course-HUJI%2071253-red?style=for-the-badge" alt="HUJI Course" />
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status" />
+</p>
 
 ---
 
-## Team Members
+> ### 💡 The Core Question & Key Takeaway
+> **Did song lyrics actually become simpler or lower in quality over the last decades?**  
+> **The Short Answer:** Not overall. While repetitive structures exist in modern music, our data shows no statistical decline in lyrical complexity across decades. However, specific genres (like *Blues* and *Country*) actually show a significant increase in lexical richness over time.
+
+---
+
+## 📑 Table of Contents
+<details>
+<summary><b>Click to expand Table of Contents</b></summary>
+
+- [Overview](#overview)
+- [Team Members](#team-members)
+- [Dataset Description](#dataset-description)
+- [Primary Variables](#primary-variables)
+- [Data Cleaning & Preprocessing](#data-cleaning--preprocessing)
+- [Key Findings](#key-findings)
+  - [1. Overall Lyric Quality & Lexical Richness](#1-overall-lyric-quality--lexical-richness)
+  - [2. Lexical Dynamics](#2-lexical-dynamics-the-rise-and-fall-of-words)
+  - [3. Cultural Shifts & Profanity](#3-cultural-shifts--profanity)
+  - [4. AI & LLM Detection](#4-ai--large-language-model-llm-detection)
+- [Full Data Dictionary](#variables)
+</details>
+
+---
+
+## Overview
+This repository contains the Data Science final project for course **71253** at **The Hebrew University of Jerusalem**. 
+
+Using **Exploratory Data Analysis (EDA)** and **Natural Language Processing (NLP)** techniques—including lexical richness metrics, profanity evolution tracking, and decade-level TF-IDF analysis—we analyze trends in lyric complexity, vocabulary trajectories, and the potential presence of AI/LLM influences in modern music.
+
+---
+
+## 👥 Team Members
 * **Geva Weiss**
 * **Amit Schraub**
 
+---
 ---
 
 ## Dataset Description
