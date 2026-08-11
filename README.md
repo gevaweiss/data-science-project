@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="Figures/banner.png" alt="Lyric Evolution Banner" width="100%">
+</p>
 # 🎵 Lyric Evolution Across Decades: Are Songs Getting Simpler?
 
 <!-- Badges Section -->
