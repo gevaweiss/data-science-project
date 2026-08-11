@@ -24,7 +24,7 @@ Using Exploratory Data Analysis (EDA) and Natural Language Processing (NLP) tech
 * `artist_name` – Performing artist or group
 * `release_year` / `decade` – Release year and binned decade
 * `genre` – Musical genre classification (e.g., Rock, Blues, Country, Hip-Hop)
-* `unique_ratio_no_repeted_chorus` – Quantitative metric measuring vocabulary diversity (e.g., TTR / Readability)
+* `unique_ratio_no_repeted_chorus` – Core Lexical Diversity Metric: The ratio of unique words to total words no stop-words and without repeated chours (closer to 1 = highly diverse, closer to 0 = highly repetitive).
 * `total_word_count` – Total word count per song
 * `profanity_ratio` – Frequency of profane terms per track
 
@@ -60,7 +60,7 @@ Using Exploratory Data Analysis (EDA) and Natural Language Processing (NLP) tech
 
 
 This table describes all the features available in the final enriched dataset, divided into logical categories: Metadata, Popularity Targets, Song Structure, and Linguistics/NLP.
-
+# Variables:
 | Feature Name | Category | Data Type | Description |
 | :--- | :--- | :--- | :--- |
 | **`song_title`** | Metadata | String | The exact title of the song as listed on Genius. |
@@ -90,5 +90,5 @@ This table describes all the features available in the final enriched dataset, d
 # Records:
 <img width="989" height="590" alt="טבלת סיכום כמות שירים" src="https://github.com/user-attachments/assets/41fac251-9f8a-45ad-a78e-b2d92de93a71" />
 
-# Variables:
+# The Fresh effect:
 <img width="1454" height="728" alt="ezgif com-resize" src="https://github.com/user-attachments/assets/67c2b81e-28da-4206-a066-5f59201da19c" />
