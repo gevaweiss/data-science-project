@@ -125,6 +125,7 @@ Using **Exploratory Data Analysis (EDA)** and **Natural Language Processing (NLP
 
 ---
 
+<a name="full-data-dictionary"></a>
 ## 📋 Full Data Dictionary
 
 This table describes all 25 features available in the final enriched dataset, divided into logical categories: Metadata, Popularity Targets, Song Structure, and Linguistics/NLP.
@@ -170,6 +171,7 @@ This table describes all 25 features available in the final enriched dataset, di
 
 ---
 
+<a name="repository-structure"></a>
 ## 📁 Repository Structure
 
 ```text
@@ -183,6 +185,7 @@ This table describes all 25 features available in the final enriched dataset, di
 
 ---
 
+<a name="quickstart--reproducibility"></a>
 ## 🚀 Quickstart & Reproducibility
 
 Follow these steps to set up the environment and run the code on your local machine:
