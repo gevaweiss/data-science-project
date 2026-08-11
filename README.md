@@ -164,3 +164,14 @@ This table describes all 25 features available in the final enriched dataset, di
 
 # The Fresh effect:
 <img width="1454" height="728" alt="ezgif com-resize" src="https://github.com/user-attachments/assets/67c2b81e-28da-4206-a066-5f59201da19c" />
+
+---
+
+## 📁 Repository Structure
+
+```text
+├── Data/                   # Raw and processed datasets (including LLM wordlists & song lyrics)
+├── Figures/                # High-resolution plots, charts, and Jupyter Notebooks for visualizations
+├── Project/                # Final PDF report and presentation materials
+├── code/                   # Python scripts for data cleaning, preprocessing, and NLP calculations
+└── README.md               # Project documentation
