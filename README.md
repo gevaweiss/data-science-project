@@ -45,6 +45,7 @@ Using **Exploratory Data Analysis (EDA)** and **Natural Language Processing (NLP
 
 ---
 
+<a name="team-members"></a>
 ## 👥 Team Members
 * **Geva Weiss**
 * **Amit Schraub**
@@ -74,6 +75,7 @@ Using **Exploratory Data Analysis (EDA)** and **Natural Language Processing (NLP
 
 ---
 
+<a name="key-findings"></a>
 ## 📊 Key Findings
 
 ### 1. Overall Lyric Quality & Lexical Richness
