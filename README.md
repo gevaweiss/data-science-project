@@ -1,3 +1,65 @@
+# Lyric Evolution Across Decades: Are Songs Getting Simpler?
+
+## Overview
+This repository contains the data science final project for course **71253** at the Hebrew University. The project investigates the "Big Question": **Have music lyrics become simpler or lower in quality over the decades?**
+
+Using Exploratory Data Analysis (EDA) and Natural Language Processing (NLP) techniques—including lexical richness metrics, profanity evolution tracking, and decade-level TF-IDF analysis—we analyze trends in lyric complexity, vocabulary trajectories, and the potential presence of AI/LLM influences in modern music.
+
+---
+
+## Team Members
+* **Geva Weiss**
+* **Amit Schroub**
+
+---
+
+## Dataset Description
+* **Source:** [genius](https://genius.com/)
+* **Data:** [Data Set](Data/final_genius_enriched_songs_by_dacades_patched.csv)
+* **Records:** [750](#records)
+* **Variables:** [20](#variables)
+
+### Primary Variables
+* `song_title` – Title of the track
+* `artist_name` – Performing artist or group
+* `release_year` / `decade` – Release year and binned decade
+* `genre` – Musical genre classification (e.g., Rock, Blues, Country, Hip-Hop)
+* `lyrics_text` – Full cleaned text of song lyrics
+* `lexical_richness` – Quantitative metric measuring vocabulary diversity (e.g., TTR / Readability)
+* `word_count` – Total word count per song
+* `[profanity_count]` – Frequency of profane terms per track
+* `[tfidf_score]` – Decade-level term frequency-inverse document frequency metric
+
+### Data Cleaning & Preprocessing
+* Handled missing values in lyric metadata.
+* Cleaned stop words, punctuation, and standardized text formatting.
+* Conducted lemmatization and aggregated lyrics by decade corpora for TF-IDF tracking.
+
+---
+
+## Key Findings
+
+### 1. Overall Lyric Quality & Lexical Richness
+* No statistical evidence indicates a general decline in song lyric quality over the years.
+* A statistically significant increase in lexical richness was observed in specific genres (such as Blues and Country) across decade periods.
+
+### 2. Lexical Dynamics: The Rise and Fall of Words
+* Binary occurrence metrics (word presence per song) vs. decade-level TF-IDF frequency metrics revealed distinct trends regarding within-song repetition vs. overall era vocabulary.
+* Tracked specific "Emerging Words" that surged during particular decades and subsequently faded.
+
+### 3. Cultural Shifts & Profanity
+* Identified a clear upward trend in profanity across decades, strongly aligned with the rise of Hip-Hop culture and its mainstream influence.
+
+### 4. AI & Large Language Model (LLM) Detection
+* Found no evidence of LLM usage or adoption among popular songwriters.
+* Demonstrated that benchmark LLM wordlists (typically derived from scientific literature) present a domain mismatch when applied to poetic and creative song lyrics.
+
+---
+
+
+
+
+
 # data-science-project
 ## Dataset Data Dictionary
 
@@ -29,7 +91,8 @@ This table describes all the features available in the final enriched dataset, d
 | **`adjectives_count`** | Linguistics (NLP) | Integer | Total count of adjectives identified using POS tagging. |
 | **`adjectives_ratio`** | Linguistics (NLP) | Float (Ratio)| The percentage of adjectives relative to the total word count, indicating descriptive depth. |
 
+# Records:
 <img width="989" height="590" alt="טבלת סיכום כמות שירים" src="https://github.com/user-attachments/assets/41fac251-9f8a-45ad-a78e-b2d92de93a71" />
 
-
+# Variables:
 <img width="1454" height="728" alt="ezgif com-resize" src="https://github.com/user-attachments/assets/67c2b81e-28da-4206-a066-5f59201da19c" />
