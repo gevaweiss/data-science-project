@@ -30,15 +30,14 @@
 - [Data Cleaning & Preprocessing](#data-cleaning--preprocessing)
 - [Key Findings](#key-findings)
   - [1. Overall Lyric Quality & Lexical Richness](#1-overall-lyric-quality--lexical-richness)
-  - [2. Lexical Dynamics](#2-lexical-dynamics-the-rise-and-fall-of-words)
-  - [3. Cultural Shifts & Profanity](#3-cultural-shifts--profanity)
-  - [4. AI & LLM Detection](#4-ai--large-language-model-llm-detection)
+  - [2. Lexical Dynamics: The Rise and Fall of Words](#2-lexical-dynamics-the-rise-and-fall-of-words)
+  - [3. Cultural Shifts & Profanity Evolution](#3-cultural-shifts--profanity-evolution)
+  - [4. AI & Large Language Model (LLM) Detection](#4-ai--large-language-model-llm-detection)
 - [Full Data Dictionary](#full-data-dictionary)
 - [Repository Structure](#repository-structure)
 - [Quickstart & Reproducibility](#quickstart--reproducibility)
 </details>
 
----
 
 ## Overview
 This repository contains the Data Science final project for course **71253** at **The Hebrew University of Jerusalem**. 
