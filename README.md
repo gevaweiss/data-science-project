@@ -74,58 +74,90 @@ Using **Exploratory Data Analysis (EDA)** and **Natural Language Processing (NLP
 
 ---
 
-## Key Findings
+## 📊 Key Findings
 
 ### 1. Overall Lyric Quality & Lexical Richness
-* No statistical evidence indicates a general decline in song lyric quality over the years.
-* A statistically significant increase in lexical richness was observed in specific genres (such as Blues and Country) across decade periods.
+- **No Overall Decline:** No statistical evidence indicates a general decline in song lyric quality or complexity over the past decades.
+- **Genre-Specific Shifts:** A statistically significant increase in lexical richness was observed in specific genres (such as *Blues* and *Country*) across decade periods.
+- **Permutation Test:** To validate these shifts, we performed a permutation test on the median lexical richness across genres.
 
-### 2. Lexical Dynamics: The Rise and Fall of Words
-* Binary occurrence metrics (word presence per song) vs. decade-level TF-IDF frequency metrics revealed distinct trends regarding within-song repetition vs. overall era vocabulary.
-* Tracked specific "Emerging Words" that surged during particular decades and subsequently faded.
+<p align="center">
+  <img src="Figures/lexical_richness_by_genre.png" alt="Lexical Richness Trend" width="85%">
+</p>
 
-### 3. Cultural Shifts & Profanity
-* Identified a clear upward trend in profanity across decades, strongly aligned with the rise of Hip-Hop culture and its mainstream influence.
-
-### 4. AI & Large Language Model (LLM) Detection
-* Found no evidence of LLM usage or adoption among popular songwriters.
-* Demonstrated that benchmark LLM wordlists (typically derived from scientific literature) present a domain mismatch when applied to poetic and creative song lyrics.
+<p align="center">
+  <img src="Figures/permutation_test_median_lexical_richness.png" alt="Permutation Test Median Lexical Richness" width="85%">
+</p>
 
 ---
 
+### 2. Lexical Dynamics: The Rise and Fall of Words
+- **Song vs. Era Vocabulary:** Binary occurrence metrics (word presence per song) vs. decade-level TF-IDF metrics revealed distinct differences between within-song repetition and overall era vocabulary.
+- **TF-IDF Formula:** We calculated term importance using standard TF-IDF weighting across decades:
 
+<p align="center">
+  <img src="Figures/tf-idf_equ.png" alt="TF-IDF Equation" width="50%">
+</p>
 
+- **Emerging & Fading Terms:** We tracked specific "Emerging Words" that surged during particular decades and subsequently faded.
 
+<p align="center">
+  <img src="Figures/tfidf_decade_trends.png" alt="Vocabulary Dynamics" width="85%">
+</p>
 
-# Variables:
+---
 
-This table describes all the features available in the final enriched dataset, divided into logical categories: Metadata, Popularity Targets, Song Structure, and Linguistics/NLP.
+### 3. Cultural Shifts & Profanity Evolution
+- **Upward Trend:** Identified a clear upward trend in profanity across decades, strongly aligned with the rise of Hip-Hop culture and its mainstream influence.
+
+<p align="center">
+  <img src="Figures/profanity_evolution.png" alt="Profanity Trend" width="85%">
+</p>
+
+---
+
+### 4. AI & Large Language Model (LLM) Detection
+- **No AI Influence Detected:** Found no evidence of LLM usage or adoption among popular songwriters in recent years.
+- **Domain Mismatch:** Benchmark LLM wordlists (typically derived from scientific literature) present a domain mismatch when applied to poetic and creative song lyrics.
+
+---
+
+## 📋 Full Data Dictionary
+
+This table describes all 25 features available in the final enriched dataset, divided into logical categories: Metadata, Popularity Targets, Song Structure, and Linguistics/NLP.
+
+<details>
+<summary><b>👉 Click here to expand the Data Dictionary (25 Variables)</b></summary>
+
+<br>
 
 | Feature Name | Category | Data Type | Description |
-| :--- | :--- | :--- | :--- |
-| **`song_title`** | Metadata | String | The exact title of the song as listed on Genius. |
-| **`artist_name`** | Metadata | String | The name of the primary performing artist. |
-| **`release_year`** | Metadata | Integer | The official release year of the song. |
-| **`decade`** | Metadata | Categorical | The specific decade the song belongs to (e.g., `1990s`, `2010s`). |
-| **`genre`** / **`primary_tag`** | Metadata | Categorical | The primary genre of the song (Pop, Rock, Hip-Hop, Country, Blues). |
-| **`source_url`** | Metadata | String | A direct URL to the song's page on Genius. |
-| **`featured_artists_count`** | Metadata | Integer | The number of guest artists (features) on the track. |
-| **`pageviews`** | Popularity (Target) | Integer | Total pageviews for the song's lyrics on Genius. Serves as the primary popularity metric. |
-| **`pyongs_count`** | Popularity (Target) | Integer | The number of upvotes ("Pyongs") from the Genius community. Indicates audience engagement. |
-| **`lyrics`** | Structure | String | The full, raw text of the song's lyrics. |
-| **`total_word_count`** | Structure | Integer | Total words in the song, excluding punctuation and meta-tags. |
-| **`count_chorus`** | Structure | Integer | The number of times a chorus (or pre-chorus) section appears. |
-| **`count_verse`** | Structure | Integer | The number of verse sections in the song. |
-| **`count_intro`** | Structure | Integer | The number of intro sections identified. |
-| **`count_bridge`** | Structure | Integer | The number of bridge sections identified. |
-| **`unique_special_word`** | Linguistics (NLP) | Integer | The count of words in the song, excluding common stop-words and repetative words. |
-| **`special_word_without_chorus`**| Linguistics (NLP) | Integer | Total special word count where repeated chorus sections are counted only **once** to avoid bias. |
-| **`unique_ratio_no_repeated_chorus`**| Linguistics (NLP) | Float (Ratio)| **Core Lexical Diversity Metric:** The ratio of unique words to total words no stop-words and without repeated chours (closer to 1 = highly diverse, closer to 0 = highly repetitive). |
-| **`special_words_ratio`** | Linguistics (NLP) | Float (Ratio)| Standard lexical diversity ratio (before chorus normalization). |
-| **`profanity_count`** | Linguistics (NLP) | Integer | Total occurrences of profanity or explicit language. |
-| **`profanity_ratio`** | Linguistics (NLP) | Float (Ratio)| The percentage of explicit words relative to the total word count. |
-| **`adjectives_count`** | Linguistics (NLP) | Integer | Total count of adjectives identified using POS tagging. |
-| **`adjectives_ratio`** | Linguistics (NLP) | Float (Ratio)| The percentage of adjectives relative to the total word count, indicating descriptive depth. |
+|---|---|---|---|
+| `song_title` | Metadata | String | The exact title of the song as listed on Genius. |
+| `artist_name` | Metadata | String | The name of the primary performing artist. |
+| `release_year` | Metadata | Integer | The official release year of the song. |
+| `decade` | Metadata | Categorical | The specific decade the song belongs to (e.g., 1990s, 2010s). |
+| `genre` / `primary_tag` | Metadata | Categorical | The primary genre of the song (Pop, Rock, Hip-Hop, Country, Blues). |
+| `source_url` | Metadata | String | A direct URL to the song's page on Genius. |
+| `featured_artists_count` | Metadata | Integer | The number of guest artists (features) on the track. |
+| `pageviews` | Popularity (Target) | Integer | Total pageviews for the song's lyrics on Genius. |
+| `pyongs_count` | Popularity (Target) | Integer | Upvotes ("Pyongs") from the Genius community. |
+| `lyrics` | Structure | String | The full, raw text of the song's lyrics. |
+| `total_word_count` | Structure | Integer | Total words in the song, excluding punctuation and meta-tags. |
+| `count_chorus` | Structure | Integer | Number of times a chorus (or pre-chorus) section appears. |
+| `count_verse` | Structure | Integer | Number of verse sections in the song. |
+| `count_intro` | Structure | Integer | Number of intro sections identified. |
+| `count_bridge` | Structure | Integer | Number of bridge sections identified. |
+| `unique_special_word` | Linguistics (NLP) | Integer | Count of words excluding common stop-words and repetitive words. |
+| `special_word_without_chorus` | Linguistics (NLP) | Integer | Special word count where repeated chorus sections are counted only *once*. |
+| `unique_ratio_no_repeated_chorus` | Linguistics (NLP) | Float (Ratio) | **Core Metric:** Unique to total words without stop-words and chorus repetition. |
+| `special_words_ratio` | Linguistics (NLP) | Float (Ratio) | Standard lexical diversity ratio (before chorus normalization). |
+| `profanity_count` | Linguistics (NLP) | Integer | Total occurrences of explicit language. |
+| `profanity_ratio` | Linguistics (NLP) | Float (Ratio) | Percentage of explicit words relative to total word count. |
+| `adjectives_count` | Linguistics (NLP) | Integer | Total count of adjectives identified using POS tagging. |
+| `adjectives_ratio` | Linguistics (NLP) | Float (Ratio) | Percentage of adjectives relative to total word count. |
+
+</details>
 
 # Records:
 <img width="989" height="590" alt="טבלת סיכום כמות שירים" src="https://github.com/user-attachments/assets/41fac251-9f8a-45ad-a78e-b2d92de93a71" />
