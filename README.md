@@ -178,6 +178,7 @@ This table describes all 25 features available in the final enriched dataset, di
 ├── code/                   # Python scripts for data cleaning, preprocessing, and NLP calculations
 ├── requirements.txt        # Python package dependencies
 └── README.md               # Project documentation
+```
 
 ---
 
